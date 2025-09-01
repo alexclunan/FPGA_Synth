@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Aug  6 22:18:25 2025
+# Process ID         : 12844
+# Current directory  : C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/FPGA_Synth
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent25088 C:\Users\Alex\Documents\Personal Tech Projects\FPGA-ASIC Synth\FPGA_Synth\FPGA_Synth.xpr
+# Log file           : C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/FPGA_Synth/vivado.log
+# Journal file       : C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/FPGA_Synth\vivado.jou
+# Running On         : DESKTOP-M9DKQUI
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 9950X3D 16-Core Processor          
+# CPU Frequency      : 4300 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 66094 MB
+# Swap memory        : 4160 MB
+# Total Virtual      : 70254 MB
+# Available Virtual  : 44787 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/FPGA_Synth/FPGA_Synth.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_LFO.tcl
+create_fileset -simset sim_2
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse {{C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/TB_sigma_delta_converter.sv} {C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/sigma_delta_converter.sv}}
+update_compile_order -fileset sim_2
+close_sim
+launch_simulation
+source tb_LFO.tcl
+close_sim
+delete_fileset [ get_filesets sim_2 ]
+file delete -force {C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/FPGA_Synth/FPGA_Synth.srcs/sim_2}
+add_files -norecurse {{C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/sigma_delta_converter.sv}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/sigma_delta_converter.sv}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/sigma_delta_converter.sv}}
+add_files -norecurse {{C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/sigma_delta_converter.sv}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/TB_sigma_delta_converter.sv}}
+reset_simulation -simset sim_1 -mode behavioral
+create_fileset -simset sim_2
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse {{C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/TB_sigma_delta_converter.sv}}
+current_fileset -simset [ get_filesets sim_2 ]
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_1
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_LFO.tcl
+close_sim
+set_property top tb_sigma_delta_converter [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ]
+source tb_sigma_delta_converter.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_sigma_delta_converter/dut/integrator}} {{/tb_sigma_delta_converter/dut/feedback}} {{/tb_sigma_delta_converter/dut/error}} 
+relaunch_sim
+run 1000 us
+run 1000 us
+relaunch_sim
+run 1000 us
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us

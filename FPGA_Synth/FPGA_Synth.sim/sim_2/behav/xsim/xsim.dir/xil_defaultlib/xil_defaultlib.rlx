@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/FPGA_Synth/FPGA_Synth.sim/sim_2/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/LFO.sv,1754360972,systemVerilog,,C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/TB_LFO.sv,,LFO,,uvm,../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/TB_LFO.sv,1753653035,systemVerilog,,,,tb_LFO,,uvm,../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/TB_sigma_delta_converter.sv,1754534577,systemVerilog,,,,tb_sigma_delta_converter,,uvm,../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/sigma_delta_converter.sv,1754536382,systemVerilog,,C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/TB_sigma_delta_converter.sv,,sigma_delta_converter,,uvm,../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
