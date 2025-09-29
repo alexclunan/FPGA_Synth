@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/sigma_delta_converter.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sigma_delta_converter
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Alex/Documents/Personal Tech Projects/FPGA-ASIC Synth/TB_sigma_delta_converter.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_sigma_delta_converter

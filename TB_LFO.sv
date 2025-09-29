@@ -8,17 +8,17 @@ parameter CLK_PERIOD = 40;
 logic           clock;
 logic           reset;
 logic [26:0]    main_counter;
-logic [7:0]     amplitude_freq_reg;
+logic [15:0]    amplitude_freq_reg;
 logic           freq_en;
 logic           amp_en;
 logic [1:0]     wave_type_reg;
 
 // LFO Output
-logic [7:0] LFO;
+logic [15:0] LFO;
 integer random;
 
 // DUT
-LFO #(.LFO_WIDTH(8)) dut
+LFO #(.LFO_WIDTH(16)) dut
 (
     .i_clock(clock),
     .i_reset(reset),

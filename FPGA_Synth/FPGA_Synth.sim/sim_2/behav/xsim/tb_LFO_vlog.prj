@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  --include "../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
-"../../../../../sigma_delta_converter.sv" \
-"../../../../../TB_sigma_delta_converter.sv" \
+"../../../../../LFO.sv" \
+"../../../../../TB_LFO.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
